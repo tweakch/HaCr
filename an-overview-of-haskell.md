@@ -1,4 +1,8 @@
-# On Overview Of Haskell
+# 1.2 On Overview Of Haskell
+
+[Previous](introduction-to-cryptocurrencies.md)
+[Lecture](https://www.youtube.com/watch?v=ctfZ6DwFiPg&list=PLJ3w5xyG4JWmBVIigNBytJhvSSfZZzfTm&index=3)
+[Next](higher-order-functions.md)
 
 ## Haskell History
 
@@ -126,6 +130,16 @@ Symbolic reduction
   = 1 + (1 + 0)
   = 1 + 1
   = 2
+```
+
+another example
+
+```hs
+  head $ tail [2,3,4]
+= head $ tail 2:[3,4]
+= head $ [3,4]
+= head [3,4]
+= 3
 ```
 
 Also known as *equational reasoning*.
