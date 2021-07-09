@@ -1,8 +1,8 @@
 # 1.2 On Overview Of Haskell
 
-[Previous](introduction-to-cryptocurrencies.md)
-[Lecture](https://www.youtube.com/watch?v=ctfZ6DwFiPg&list=PLJ3w5xyG4JWmBVIigNBytJhvSSfZZzfTm&index=3)
-[Next](higher-order-functions.md)
+* [Previous](introduction-to-cryptocurrencies.md)
+* [Watch Lecture](https://www.youtube.com/watch?v=ctfZ6DwFiPg&list=PLJ3w5xyG4JWmBVIigNBytJhvSSfZZzfTm&index=3)
+* [Next](higher-order-functions.md)
 
 ## Haskell History
 
