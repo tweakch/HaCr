@@ -111,11 +111,11 @@ chain2' = Block (Block GenesisBlock 2) 4
 
 |Line|Term|Code|Explanation|
 |-|-|-|-|
-|1|type signature|`chain1 = Block GenesisBlock 2`| Presence of `=` makes this line a binding |
+|1|type signature|`chainLength :: Chain -> Int`| optional |
 |2 + 3|equations / cases|`chainLength GenesisBlock = 0`| Presence of `=` makes this line a binding |
-|2 + 3|left hand sides |`chainLength GenesisBlock`, `chainLength (Block c _)` | Presence of `=` makes this line a binding |
-|2 + 3|patterns |`GenesisBlock`, `(Block c _)` | Presence of `=` makes this line a binding |
-|3|recursive call |`chainLength c` | Presence of `=` makes this line a binding |
+|2 + 3|left hand sides |`chainLength GenesisBlock`, `chainLength (Block c _)` |  |
+|2 + 3|patterns |`GenesisBlock`, `(Block c _)` | saying: "depending on what this Chain is, what are we going to do with it?" |
+|3| recursive call |`chainLength c` | |
 
 ### Evaluation step by step
 

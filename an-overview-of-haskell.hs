@@ -1,3 +1,8 @@
+module BlockChain (
+  chainLength
+  hasBlock
+) where
+
 data Chain = 
     GenesisBlock
   | Block Chain Txs
