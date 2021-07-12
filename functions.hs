@@ -1,3 +1,4 @@
+{-# LANGUAGE DeriveFoldable #-}
 -- import Data.Char 
 -- digitalRoot :: Integral a => a -> a
 -- digitalRoot 0 = 0
@@ -23,6 +24,7 @@
 data Chain txs = 
     GenesisBlock
   | Block (Chain txs) txs
+  deriving (Eq, Show, Foldable)
 
 chain1 = Block GenesisBlock 2
 

@@ -258,7 +258,7 @@ These work for any choice of type `txs`!
 
 ### Overloading
 
-The `hasBlock` function is not entirely independet of type `t` and `x`.
+The `hasBlock` function is not entirely independent of type `t` and `x`.
 
 ```hs
 hasBlock x GenesisBlock = False
@@ -273,3 +273,18 @@ ghci> :t (==)
 (==) :: Eq a => a -> a -> Bool -- reads (==) is of type a to a to Bool, as long as a is an instance of Eq.
 ```
 
+```hs
+{-# LANGUAGE DeriveFoldable #-}
+
+data Chain txs = 
+    GenesisBlock
+  | Block (Chain txs) txs
+  deriving (Eq, Show, Foldable)
+``` 
+
+## Summary
+
+* higher order function definiton is a feature of functional languages
+* polymorphism, data types and pattern matching are common to statically typed functional languages
+* type classes are rather unique to Haskell
+* Explicit effects and lazy evaluation make Haskell truly special
