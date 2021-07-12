@@ -1,3 +1,8 @@
+# user .gitignore
+pastebin.hs
+
+# haskell .gitignore
+
 dist
 dist-*
 cabal-dev
